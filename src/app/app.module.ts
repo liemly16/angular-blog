@@ -7,6 +7,11 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { ArticleListComponent } from './components/article-list/article-list.component';
 import { ArticleComponent } from './components/article/article.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { PostComponent } from './components/post/post.component';
+import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
+import { ArticlePipe } from './pipes/article.pipe';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -16,9 +21,14 @@ import { ArticleComponent } from './components/article/article.component';
     FooterComponent,
     ArticleListComponent,
     ArticleComponent,
+    PostComponent,
+    ArticleDetailComponent,
+    ArticlePipe,
+    TruncatePipe,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
